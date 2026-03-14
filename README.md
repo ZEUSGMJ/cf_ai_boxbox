@@ -6,6 +6,8 @@ Boxbox is an F1 chat assistant on Cloudflare. It refines vague user questions, c
 
 [https://boxbox.jisnugm.com](https://boxbox.jisnugm.com)
 
+> Built as the optional assignment for the Cloudflare internship application. Due to finals, I didn't get to tailor it further — but it's fully functional and I'm happy with where it landed.
+
 ## Tech Stack
 
 | Layer | Technology |
