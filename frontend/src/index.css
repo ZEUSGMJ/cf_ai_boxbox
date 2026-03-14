@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #080a10;
+  --panel: #101521;
+  --panel-2: #151c2b;
+  --border: #273249;
+  --text: #e4ebff;
+  --muted: #9aa6c4;
+  --brand: #d92a3f;
+  --brand-strong: #b91f34;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 12% 6%, rgba(217, 42, 63, 0.2), transparent 38%),
+    radial-gradient(circle at 90% 4%, rgba(42, 111, 217, 0.14), transparent 34%),
+    var(--bg);
+  font-family: "Segoe UI", "Trebuchet MS", "Arial", sans-serif;
+}
+
+.chat-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #384766 transparent;
+}
+
+.chat-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: linear-gradient(180deg, #31415f, #22304b);
+  border: 2px solid transparent;
+}
+
+.markdown-content :is(h1, h2, h3) {
+  margin: 0.78rem 0 0.45rem;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.markdown-content p {
+  margin: 0 0 0.52rem;
+}
+
+.markdown-content > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin: 0 0 0.55rem;
+  padding-left: 1.1rem;
+}
+
+.markdown-content li {
+  margin-bottom: 0.26rem;
+}
+
+.markdown-content table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 0.2rem 0 0.8rem;
+  font-size: 0.84rem;
+  border: 1px solid #2e3a55;
+}
+
+.markdown-content th,
+.markdown-content td {
+  border: 1px solid #2e3a55;
+  padding: 0.34rem 0.58rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.markdown-content th {
+  background: #1a2335;
+  font-weight: 620;
+}
+
+.markdown-content a {
+  color: #9dc2ff;
+  text-decoration: underline;
+  text-decoration-color: rgba(157, 194, 255, 0.6);
+  text-underline-offset: 2px;
+}
+
+.markdown-content code {
+  background: #1b2437;
+  border-radius: 0.35rem;
+  padding: 0.12rem 0.35rem;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.84em;
+}
+
+.markdown-content pre {
+  background: #0c111d;
+  border: 1px solid #2c3853;
+  border-radius: 0.56rem;
+  padding: 0.7rem;
+  overflow-x: auto;
+  margin: 0.2rem 0 0.72rem;
+}
+
+.markdown-content pre code {
+  background: transparent;
+  padding: 0;
+}

@@ -1,0 +1,15 @@
+name = "cf-ai-boxbox-worker"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[ai]
+binding = "AI"
+
+[[durable_objects.bindings]]
+name = "SESSION_MEMORY"
+class_name = "SessionMemory"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["SessionMemory"]

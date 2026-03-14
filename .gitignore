@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+frontend/dist/
+
+# Wrangler local state
+.wrangler/
+worker/.wrangler/
+
+# Test build artifacts
+worker/.test-dist/
+
+# Env files
+.env
+.env.local
+*.local
+
+# OS
+.DS_Store
+Thumbs.db

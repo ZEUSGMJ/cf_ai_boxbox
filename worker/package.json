@@ -1,0 +1,18 @@
+{
+  "name": "cf-ai-boxbox-worker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "test:build": "tsc -p tsconfig.test-build.json",
+    "test:run": "node tests/validation-and-matching.test.cjs && node tests/intent-routing.test.cjs && node tests/chat-integration.test.cjs",
+    "test": "npm run test:build && npm run test:run"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260313.1",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.73.0"
+  }
+}
